@@ -13,13 +13,15 @@
   </head>
   <body>
     <h1 id="start-title">c2y5</h1>
-
+    <h2 id="wip" style="opacity: 0">Work In Progress</h2>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const title = document.getElementById("start-title");
+        const wip = document.getElementById("wip");
         setTimeout(() => {
           title.classList.add("transition");
           document.body.classList.add("transition");
+          wip.style.animation = "appear_in 0.5s ease forwards";
         }, 2000);
       });
     </script>
