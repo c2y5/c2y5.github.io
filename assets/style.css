@@ -16,10 +16,19 @@ h1 {
   font-size: 8rem;
   text-align: center;
   font-family: "Bungee";
-  animation: flash 0.1s 5 alternate;
-  transition: color 0.5s, transform 0.5s;
   position: center;
   z-index: 1;
+  transition: color 0.5s, transform 0.5s;
+}
+
+.b-load {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Bungee";
+  position: center;
+  animation: flash 0.1s 5 alternate;
+  z-index: 1;
+  margin-top: -10%;
 }
 
 h2 {
