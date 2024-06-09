@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  user-select: none;
+  transition: background-color 0.5s;
+}
+
+h1 {
+  font-size: 8rem;
+  text-align: center;
+  font-family: "Bungee";
+  margin: 0;
+  animation: flash 0.1s 5 alternate;
+  transition: color 0.5s, transform 0.5s;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.transition {
+  background-color: white !important;
+}
+
+#start-title.transition {
+  color: black !important;
+  animation: none;
+  transform: translateY(-40vh) scale(0.5);
+  background: none !important;
+}

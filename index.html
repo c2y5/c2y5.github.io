@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+    <title>c2y5</title>
+  </head>
+  <body>
+    <h1 id="start-title">c2y5</h1>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const title = document.getElementById("start-title");
+        setTimeout(() => {
+          title.classList.add("transition");
+          document.body.classList.add("transition");
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>
