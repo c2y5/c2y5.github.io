@@ -10,6 +10,19 @@ body {
   color: white;
   user-select: none;
   transition: background-color 0.5s;
+  overflow: hidden;
+  font-family: "Bungee";
+}
+
+@keyframes scroll-diagonal {
+  0% {
+    top: -50%;
+    right: -50%;
+  }
+  100% {
+    top: 100%;
+    right: 100%;
+  }
 }
 
 h1 {
@@ -21,21 +34,11 @@ h1 {
   transition: color 0.5s, transform 0.5s;
 }
 
-.b-load {
-  font-size: 2rem;
-  text-align: center;
-  font-family: "Bungee";
-  position: center;
-  animation: flash 0.1s 5 alternate;
-  z-index: 1;
-  margin-top: -10%;
-}
-
 h2 {
   font-size: 3rem;
   text-align: center;
   font-family: "Bungee";
-  color: rgb(0, 0, 0);
+  color: white;
   align-items: center;
   z-index: 1;
 }
@@ -61,12 +64,7 @@ h2 {
   }
 }
 
-.transition {
-  background-color: white !important;
-}
-
 #start-title.transition {
-  color: black !important;
   animation: none;
   transform: translateY(-40vh) scale(0.5);
   background: none !important;
@@ -78,4 +76,19 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+}
+
+.b-load {
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Bungee";
+  position: absolute;
+  bottom: 25%;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  z-index: 3;
 }
