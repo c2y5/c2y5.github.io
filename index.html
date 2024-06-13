@@ -13,20 +13,22 @@
   </head>
   <body>
     <h1 id="start-title">c2y5</h1>
-    <button id="start-button" class="b-load">next</button>
+    <!--<button id="start-button" class="b-load">next</button>-->
     <h2 id="wip" style="opacity: 0">Work In Progress</h2>
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const title = document.getElementById("start-title");
         const wip = document.getElementById("wip");
-        const startButton = document.getElementById("start-button");
+        //const startButton = document.getElementById("start-button");
 
-        startButton.addEventListener("click", () => {
+        //startButton.addEventListener("click", () => {
+        setTimeout(function () {
           title.classList.add("transition");
           wip.style.animation = "wipIn 1s ease forwards";
           startButton.style.display = "none";
-        });
+        }, 1500);
+        //});
       });
     </script>
   </body>
