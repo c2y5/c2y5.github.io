@@ -12,6 +12,7 @@
     <title>c2y5</title>
   </head>
   <body>
+    <div id="background"></div>
     <h1 id="start-title">c2y5</h1>
     <!--<button id="start-button" class="b-load">next</button>-->
     <h2 id="wip" style="opacity: 0">Work In Progress</h2>
@@ -20,15 +21,26 @@
       document.addEventListener("DOMContentLoaded", () => {
         const title = document.getElementById("start-title");
         const wip = document.getElementById("wip");
+        const background = document.getElementById("background");
         //const startButton = document.getElementById("start-button");
 
         //startButton.addEventListener("click", () => {
+        //title.classList.add("transition");
+        //wip.style.animation = "wipIn 1s ease forwards";
+        //startButton.style.display = "none";
+        //});
+
         setTimeout(function () {
           title.classList.add("transition");
           wip.style.animation = "wipIn 1s ease forwards";
-          startButton.style.display = "none";
+          //startButton.style.display = "none";
+          background.style.opacity = "1";
         }, 1500);
-        //});
+
+        window.addEventListener("scroll", () => {
+          const scrollPosition = window.scrollY;
+          background.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
+        });
       });
     </script>
   </body>
